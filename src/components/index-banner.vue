@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            banner_list: '/banner.jpg'
+            banner_list: '/images/banner.jpg'
         }
     },
     methods: {

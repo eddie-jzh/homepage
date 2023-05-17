@@ -7,19 +7,19 @@ export default {
             title_en: 'company atmosphere',
             title_zh: '公司氛围',
             images_list: [{
-                url: '/envir-2.jpg',
+                url: '/images/envir-2.jpg',
                 type: ''
             }, {
-                url: '/envir-2.jpg',
+                url: '/images/envir-2.jpg',
                 type: ''
             }, {
-                url: '/envir-2.jpg',
+                url: '/images/envir-2.jpg',
                 type: ''
             }, {
-                url: '/envir-2.jpg',
+                url: '/images/envir-2.jpg',
                 type: ''
             }, {
-                url: '/envir-5.jpg',
+                url: '/images/envir-5.jpg',
                 type: 'full'
             }]
         };
