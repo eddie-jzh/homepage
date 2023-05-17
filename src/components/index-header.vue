@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            header_logo: '/src/assets/images/logo.png',
+            header_logo: '/logo.png',
             header_list: ['首页', '灏力故事', '发展空间', '公司福利', '员工风采', '加入我们']
         }
     }

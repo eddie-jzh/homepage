@@ -8,22 +8,22 @@ export default {
             title_zh: '合作伙伴',
             partner_list: [{
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }, {
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }, {
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }, {
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }, {
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }, {
                 name: 'shopify',
-                url: '/src/assets/images/shopify.jpg'
+                url: '/shopify.jpg'
             }]
         }
     },
