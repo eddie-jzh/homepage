@@ -1,0 +1,62 @@
+<script>
+import IndexSectionTitle from './index-section-title.vue';
+
+export default {
+    data() {
+        return {
+            title_en: 'company atmosphere',
+            title_zh: '公司氛围',
+            images_list: [{
+                url: 'src/assets/images/envir-2.jpg',
+                type: ''
+            }, {
+                url: 'src/assets/images/envir-2.jpg',
+                type: ''
+            }, {
+                url: 'src/assets/images/envir-2.jpg',
+                type: ''
+            }, {
+                url: 'src/assets/images/envir-2.jpg',
+                type: ''
+            }, {
+                url: 'src/assets/images/envir-5.jpg',
+                type: 'full'
+            }]
+        };
+    },
+    components: { IndexSectionTitle }
+}
+</script>
+
+<template>
+    <section id="atmosphere">
+        <IndexSectionTitle :title_en="title_en" :title_zh="title_zh"></IndexSectionTitle>
+
+        <div class="wrap">
+            <ul>
+                <li v-for="(item, index) in images_list" :key="index" :class="item.type"><img :src="item.url" alt=""></li>
+            </ul>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+#atmosphere .wrap {
+    padding-bottom: 4vw;
+}
+
+#atmosphere ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#atmosphere ul li {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+#atmosphere ul li.full {
+    width: 100%;
+}
+</style>

@@ -13,11 +13,6 @@ export default defineConfig({
   },
   base: './',
   build: {
-    outDir: 'docs',
-    rollupOptions: {
-      output: {
-        
-      }
-    }
+    outDir: 'docs'
   }
 })
