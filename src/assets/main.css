@@ -1,7 +1,7 @@
 @import './base.css';
 
 .wrap {
-    width: 64%;
+    width: 72%;
     height: 100%;
     position: relative;
     margin: 0 auto;
@@ -61,4 +61,13 @@
 .active,
 .active a {
     color: orange !important;
+}
+
+
+
+/* 媒体查询 */
+@media (max-width: 750px) {
+    .wrap {
+        width: 96%;
+    }
 }

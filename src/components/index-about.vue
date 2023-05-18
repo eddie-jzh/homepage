@@ -39,7 +39,7 @@ export default {
 #about .wrap>div {
     width: 48%;
     min-height: 300px;
-    /* background-color: #ddd; */
+    overflow: hidden;
 }
 
 #about .left>p {
@@ -70,5 +70,19 @@ export default {
 
 #about .right img {
     height: 100%;
+}
+
+
+
+/* 媒体查询 */
+@media (max-width: 750px) {
+    #about .wrap {
+        flex-direction: column;
+    }
+    #about .wrap>div {
+        width: auto;
+        flex: 1;
+        margin: 2vw 0;
+    }
 }
 </style>

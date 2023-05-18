@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             footer_list: ['首页', '灏力故事', '发展空间', '公司福利', '员工风采', '加入我们'],
-            footer_text: '&copy; 2023 香港灏力国际有限公司广州代表处'
+            footer_text: '© 2023 香港灏力国际有限公司广州代表处'
         }
     }
 }
@@ -23,6 +23,7 @@ export default {
 footer {
     width: 100%;
     height: 5vw;
+    min-height: 90px;
     background-color: #454545;
     color: #D9D9D9;
     display: flex;

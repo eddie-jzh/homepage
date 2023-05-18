@@ -54,9 +54,26 @@ export default {
 #atmosphere ul li {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+    display: flex;
 }
 
 #atmosphere ul li.full {
     width: 100%;
+}
+
+
+
+/* 媒体查询 */
+@media (max-width: 750px) {
+    #atmosphere ul {
+        flex-direction: column;
+    }
+
+    #atmosphere ul li {
+        width: auto;
+        flex: 1;
+        margin: 2vw 0;
+        overflow: hidden;
+    }
 }
 </style>

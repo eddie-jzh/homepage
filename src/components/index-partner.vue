@@ -65,4 +65,20 @@ export default {
     display: flex;
     align-items: center;
 }
+
+
+
+/* 媒体查询 */
+@media (max-width: 750px) {
+    #partner ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #partner ul li {
+        width: 32%;
+        height: auto;
+        margin: 1vw 0;
+    }
+}
 </style>
