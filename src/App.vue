@@ -1,19 +1,43 @@
-<script setup>
+<script>
 import IndexHeader from './components/index-header.vue';
-import IndexBanner from './components/index-banner.vue';
-import IndexAbout from './components/index-about.vue';
-import IndexAtom from './components/index-atom.vue';
-import IndexPartner from './components/index-partner.vue';
 import IndexFooter from './components/index-footer.vue';
+import { RouterLink, RouterView } from 'vue-router'
+
+export default {
+    data() {
+        return {
+            router_list: [{
+                text: '首页',
+                path: '/'
+            }, {
+                text: '灏力故事',
+                path: '/about'
+            }, {
+                text: '发展空间',
+                path: '/develop'
+            }, {
+                text: '公司福利',
+                path: '/benefit'
+            }, {
+                text: '员工风采',
+                path: '/workmate'
+            }, {
+                text: '加入我们',
+                path: '/contact'
+            }]
+        }
+    },
+    components: {
+        IndexHeader,
+        IndexFooter
+    }
+}
 </script>
 
 <template>
-    <IndexHeader></IndexHeader>
-    <IndexBanner></IndexBanner>
-    <IndexAbout></IndexAbout>
-    <IndexAtom></IndexAtom>
-    <IndexPartner></IndexPartner>
-    <IndexFooter></IndexFooter>
+    <IndexHeader :router_list="router_list"></IndexHeader>
+    <RouterView></RouterView>
+    <IndexFooter :router_list="router_list"></IndexFooter>
 </template>
 
 <style scoped></style>
