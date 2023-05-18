@@ -4,8 +4,8 @@ export default {
         return {
             header_logo: './images/logo.png',
             header_list: ['首页', '灏力故事', '发展空间', '公司福利', '员工风采', '加入我们'],
-            header_icon_nav: '/nav.svg',
-            header_icon_close: '/close.svg',
+            header_icon_nav: './nav.svg',
+            header_icon_close: './close.svg',
             nav_flag: false
         }
     },
@@ -21,7 +21,9 @@ export default {
     <header>
         <div class="wrap">
             <div class="logo">
-                <img :src="header_logo" alt="">
+                <a href="#">
+                    <img :src="header_logo" alt="">
+                </a>
             </div>
             <ul class="nav_pc">
                 <li v-for="(item, index) in header_list" :key="index" :class="{ active: index == 0 }"><a href="#">{{ item
