@@ -30,10 +30,13 @@ export default {
 </template>
 
 <style scoped>
+#about {
+    padding: 2vw 0;
+}
+
 #about .wrap {
     display: flex;
     justify-content: space-between;
-    margin: 4vw auto;
 }
 
 #about .wrap>div {
@@ -53,7 +56,7 @@ export default {
 #about .left .title_en {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: orange;
 }
@@ -83,6 +86,7 @@ export default {
         width: auto;
         flex: 1;
         margin: 2vw 0;
+        min-height: auto;
     }
 }
 </style>

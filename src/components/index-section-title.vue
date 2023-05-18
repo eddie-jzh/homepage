@@ -27,8 +27,7 @@ export default {
 <style scoped>
 .section_title {
     text-align: center;
-    margin-top: 2vw 0;
-    padding: 3vw 0 2vw;
+    padding-bottom: 2vw;
 }
 
 .section_title p {
@@ -37,7 +36,7 @@ export default {
 
 .section_title .title_en {
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: orange;
 }

@@ -41,8 +41,8 @@ export default {
 </template>
 
 <style scoped>
-#atmosphere .wrap {
-    padding-bottom: 4vw;
+#atmosphere {
+    padding: 2vw 0;
 }
 
 #atmosphere ul {

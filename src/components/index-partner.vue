@@ -44,12 +44,9 @@ export default {
 </template>
 
 <style scoped>
-#partner .wrap {
-    padding-bottom: 4vw;
-}
-
 #partner {
     background-color: #F5F5F5;
+    padding: 2vw 0;
 }
 
 #partner ul {
