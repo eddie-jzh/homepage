@@ -14,12 +14,10 @@ export default {
 
 <template>
     <div class="section_title">
-        <div class="wrap">
-            <p class="title_en">{{ title_en }}</p>
-            <p class="title_zh">{{ title_zh }}</p>
-            <div class="gap_line">
-                <div class="gap_dot"></div>
-            </div>
+        <p class="title_en">{{ title_en }}</p>
+        <p class="title_zh">{{ title_zh }}</p>
+        <div class="gap_line">
+            <div class="gap_dot"></div>
         </div>
     </div>
 </template>

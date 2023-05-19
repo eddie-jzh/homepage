@@ -8,34 +8,36 @@ export default {
             title_zh: '合作伙伴',
             partner_list: [{
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }, {
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }, {
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }, {
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }, {
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }, {
                 name: 'shopify',
-                url: './images/shopify.jpg'
+                url: './images/index-shopify.jpg'
             }]
         }
     },
-    components: { IndexSectionTitle }
+    components: {
+        IndexSectionTitle
+    }
 }
 </script>
 
 <template>
     <section id="partner">
-        <IndexSectionTitle :title_en="title_en" :title_zh="title_zh"></IndexSectionTitle>
-
         <div class="wrap">
+            <IndexSectionTitle :title_en="title_en" :title_zh="title_zh"></IndexSectionTitle>
+
             <ul>
                 <li v-for="(item, index) in partner_list" :key="index"><img :src="item.url" :alt="item.name"></li>
             </ul>

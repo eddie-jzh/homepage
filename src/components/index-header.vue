@@ -5,7 +5,7 @@ export default {
     },
     data() {
         return {
-            header_logo: './images/logo.png',
+            header_logo: './images/index-logo.png',
             header_icon_nav: './nav.svg',
             header_icon_close: './close.svg',
             nav_flag: false
@@ -79,6 +79,7 @@ header {
     width: 100%;
     height: 7vw;
     min-height: 60px;
+    border-bottom: 1px solid #eee;
 }
 
 header .wrap {

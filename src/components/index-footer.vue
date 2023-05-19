@@ -5,7 +5,7 @@ export default {
     },
     data() {
         return {
-            footer_text: '© 2023 香港灏力国际有限公司广州代表处'
+            footer_text: '©copyright 2023 傲合发展有限公司'
         }
     }
 }

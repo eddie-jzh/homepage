@@ -10,7 +10,7 @@ export default {
                 text: '首页',
                 path: '/'
             }, {
-                text: '灏力故事',
+                text: '傲合故事',
                 path: '/about'
             }, {
                 text: '发展空间',
