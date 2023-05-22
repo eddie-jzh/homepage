@@ -7,32 +7,34 @@ export default {
             title_en: 'company atmosphere',
             title_zh: '公司氛围',
             images_list: [{
-                url: './images/envir-2.jpg',
+                url: './images/index-list.jpg',
                 type: ''
             }, {
-                url: './images/envir-2.jpg',
+                url: './images/index-list.jpg',
                 type: ''
             }, {
-                url: './images/envir-2.jpg',
+                url: './images/index-list.jpg',
                 type: ''
             }, {
-                url: './images/envir-2.jpg',
+                url: './images/index-list.jpg',
                 type: ''
             }, {
-                url: './images/envir-5.jpg',
+                url: './images/index-list-full.jpg',
                 type: 'full'
             }]
         };
     },
-    components: { IndexSectionTitle }
+    components: {
+        IndexSectionTitle
+    }
 }
 </script>
 
 <template>
     <section id="atmosphere">
-        <IndexSectionTitle :title_en="title_en" :title_zh="title_zh"></IndexSectionTitle>
-
         <div class="wrap">
+            <IndexSectionTitle :title_en="title_en" :title_zh="title_zh"></IndexSectionTitle>
+
             <ul>
                 <li v-for="(item, index) in images_list" :key="index" :class="item.type"><img :src="item.url" alt=""></li>
             </ul>

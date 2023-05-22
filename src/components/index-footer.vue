@@ -1,9 +1,11 @@
 <script>
 export default {
+    props: {
+        router_list: Array
+    },
     data() {
         return {
-            footer_list: ['首页', '灏力故事', '发展空间', '公司福利', '员工风采', '加入我们'],
-            footer_text: '© 2023 香港灏力国际有限公司广州代表处'
+            footer_text: '©copyright 2023 傲合发展有限公司'
         }
     }
 }
@@ -12,7 +14,8 @@ export default {
 <template>
     <footer>
         <ul>
-            <li v-for="(item, index) in footer_list" :key="index" :class="{ active: index == 0 }"><a href="#">{{ item }}</a>
+            <li v-for="(item, index) in router_list" :key="index">
+                <RouterLink :to="item.path" active-class="active">{{ item.text }}</RouterLink>
             </li>
         </ul>
         <p>{{ footer_text }}</p>

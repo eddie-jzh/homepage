@@ -1,9 +1,11 @@
 <script>
 export default {
+    props: {
+        router_list: String
+    },
     data() {
         return {
-            header_logo: './images/logo.png',
-            header_list: ['首页', '灏力故事', '发展空间', '公司福利', '员工风采', '加入我们'],
+            header_logo: './images/index-logo.png',
             header_icon_nav: './nav.svg',
             header_icon_close: './close.svg',
             nav_flag: false
@@ -26,8 +28,9 @@ export default {
                 </a>
             </div>
             <ul class="nav_pc">
-                <li v-for="(item, index) in header_list" :key="index" :class="{ active: index == 0 }"><a href="#">{{ item
-                }}</a></li>
+                <li v-for="(item, index) in router_list" :key="index">
+                    <RouterLink :to="item.path" active-class="active">{{ item.text }}</RouterLink>
+                </li>
             </ul>
             <div class="nav_icon" @click="toggleNav"><img :src="header_icon_nav" alt=""></div>
             <transition name="side-fade">
@@ -36,9 +39,9 @@ export default {
                         <div class="nav_mobi" v-show="nav_flag">
                             <img :src="header_icon_close" alt="" @click.stop="toggleNav">
                             <ul>
-                                <li v-for="(item, index) in header_list" :key="index"><a href="#">{{
-                                    item
-                                }}</a></li>
+                                <li v-for="(item, index) in router_list" :key="index">
+                                    <RouterLink :to="item.path" active-class="active_mobi">{{ item.text }}</RouterLink>
+                                </li>
                             </ul>
                         </div>
                     </transition>
@@ -76,6 +79,7 @@ header {
     width: 100%;
     height: 7vw;
     min-height: 60px;
+    border-bottom: 1px solid #eee;
 }
 
 header .wrap {
@@ -148,6 +152,23 @@ header .mask .nav_mobi li:not(:last-child) {
 header .mask .nav_mobi li a {
     color: #fff;
     line-height: 50px;
+}
+
+header .mask .nav_mobi li {
+    position: relative;
+}
+
+header .mask .nav_mobi a.active_mobi::before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 
