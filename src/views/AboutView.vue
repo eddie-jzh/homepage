@@ -70,6 +70,7 @@ export default {
     color: #000;
     font-size: 2rem;
     font-weight: bold;
+    line-height: 40px;
 }
 
 #intro .right .culture {
