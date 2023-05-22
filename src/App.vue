@@ -36,7 +36,9 @@ export default {
 
 <template>
     <IndexHeader :router_list="router_list"></IndexHeader>
-    <RouterView></RouterView>
+    <div id="page_container">
+        <RouterView></RouterView>
+    </div>
     <IndexFooter :router_list="router_list"></IndexFooter>
 </template>
 
