@@ -1,0 +1,100 @@
+@import './base.css';
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+#page_container {
+    min-height: calc(100% - 150px);
+}
+
+.wrap {
+    width: 72%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.shadow {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.gap_line {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gap_line .gap_dot {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.gap_line::before,
+.gap_line::after {
+    content: '';
+    width: 8vw;
+    min-width: 100px;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+}
+
+.gap_line::after {
+    left: 1.6rem;
+}
+
+.active,
+.active a {
+    color: orange !important;
+}
+
+img.img_blur {
+    filter: blur(4px) brightness(0.8);
+    -webkit-filter: blur(4px) brightness(0.8);
+}
+
+/* 媒体查询 */
+@media (max-width: 750px) {
+    html {
+        font-size: 14px;
+    }
+
+    .wrap {
+        width: 96%;
+    }
+
+    img.img_blur {
+        filter: blur(2px) brightness(0.8);
+        -webkit-filter: blur(2px) brightness(0.8);
+}
+}
