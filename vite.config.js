@@ -11,8 +11,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: "./", //设置项目的根目录
+  base: '/homepage/',
   build: {
-    outDir: 'docs' // 打包文件的输出目录
+    outDir: 'docs'
   }
 })
