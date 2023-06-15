@@ -22,10 +22,8 @@ export default {
 <template>
     <header id="header">
         <div class="wrap">
-            <div class="logo">
-                <a href="/">
-                    <img :src="header_logo" alt="">
-                </a>
+            <div class="logo" @click="this.$router.push('/')">
+                <img :src="header_logo" alt="">
             </div>
             <ul class="nav_pc">
                 <li v-for="(item, index) in router_list" :key="index">

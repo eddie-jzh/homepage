@@ -52,9 +52,7 @@ export default {
         IndexBanner,
         indexSectionTitle
     },
-    mounted() {
-        window.scrollTo(0, 0)
-    },
+    mounted() { },
 };
 </script>
 

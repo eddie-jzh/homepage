@@ -20,9 +20,7 @@ export default {
         IndexAtom,
         IndexPartner
     },
-    mounted() {
-        window.scrollTo(0 ,0)
-    },
+    mounted() { },
 }
 </script>
 

@@ -54,9 +54,7 @@ export default {
     components: {
         indexBanner
     },
-    mounted() {
-        window.scrollTo(0, 0)
-    },
+    mounted() { },
 };
 </script>
 
@@ -70,6 +68,10 @@ export default {
                     <p class="item_img">
                         <img v-lazy="item.url" alt="" :class="{ hover_img: item.flag_hover }"
                             @mouseenter="handleImgHover(index)" @mouseleave="handleImgHover(index)">
+                    <div class="item_img_hover" @mouseenter="handleImgHover(index)" @mouseleave="handleImgHover(index)">
+                        <p>{{ item.title.split(' ')[0] }}</p>
+                        <p>{{ item.title.split(' ')[1] }}</p>
+                    </div>
                     </p>
                     <p class="item_title">{{ item.title }}</p>
                     <p class="item_desc" :title="item.description">{{ item.description }}</p>
@@ -95,11 +97,25 @@ export default {
 #workmate ul li .item_img {
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#workmate ul li .item_img .item_img_hover {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
 }
 
 #workmate ul li .item_img img {
     transition: all 0.5s ease;
     transform: scale(1.01);
+    filter: blur(2px) brightness(1);
+    -webkit-filter: blur(2px) brightness(1);
 }
 
 #workmate ul li .item_img img.hover_img {

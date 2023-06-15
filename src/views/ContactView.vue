@@ -48,9 +48,7 @@ export default {
             this.contact_msg = ''
         }
     },
-    mounted() {
-        window.scrollTo(0 ,0)
-    },
+    mounted() { },
 };
 </script>
 
@@ -68,12 +66,14 @@ export default {
                 <p class="title">{{ form_title }}</p>
                 <form method="post" action="#" id="contact-form">
                     <p>
-                        <input type="text" name="contact-name" id="contact-name" :placeholder="text_name" v-model="contact_name">
+                        <input type="text" name="contact-name" id="contact-name" :placeholder="text_name"
+                            v-model="contact_name">
                         <input type="text" name="contact-mail" id="contact-mail" :placeholder="text_mail"
                             v-model="contact_mail">
                     </p>
                     <p>
-                        <textarea name="contact-msg" id="contact-msg" :placeholder="text_msg" v-model="contact_msg"></textarea>
+                        <textarea name="contact-msg" id="contact-msg" :placeholder="text_msg"
+                            v-model="contact_msg"></textarea>
                     </p>
                     <p>
                     <div id="submit" @click="handleSubmit" v-html="text_submit"></div>

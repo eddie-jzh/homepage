@@ -1,6 +1,7 @@
 @font-face {
     font-family: customFont;
     src: url('../assets/custom-font.ttf');
+    font-display: swap;
 }
 
 body,

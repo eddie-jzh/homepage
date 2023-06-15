@@ -76,9 +76,7 @@ export default {
         IndexBanner,
         IndexSectionTitle
     },
-    mounted() {
-        window.scrollTo(0, 0)
-    },
+    mounted() { },
 };
 </script>
 

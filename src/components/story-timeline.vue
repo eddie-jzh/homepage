@@ -91,12 +91,14 @@ export default {
     border-right: 1px solid orange;
     text-align: right;
     padding-right: 3vw;
+    align-items: flex-end;
 }
 
 #timeline .timeline_item>div:nth-child(2) {
     border-left: 1px solid orange;
     text-align: left;
     padding-left: 3vw;
+    align-items: flex-start;
 }
 
 #timeline .timeline_item .item_true {
@@ -150,6 +152,7 @@ export default {
 
 #timeline .timeline_item .item_true p:last-child {
     font-size: 1.1rem;
+    width: 40%;
 }
 
 #timeline .timeline_item .item_img {
@@ -165,11 +168,11 @@ export default {
 }
 
 #timeline .item_left .item_img {
-    left: 20%;
+    left: 16%;
 }
 
 #timeline .item_right .item_img {
-    right: 20%;
+    right: 16%;
 }
 
 #timeline .timeline_item .item_img img {
@@ -201,6 +204,10 @@ export default {
 
     #timeline .item_right .item_img {
         right: 60%;
+    }
+
+    #timeline .timeline_item .item_true p:last-child {
+        width: 100%;
     }
 }
 
